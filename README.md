@@ -12,7 +12,7 @@
 
 ## 💻 Sobre
 
-Este projeto é um alternador de temas feito em HTML, CSS e JavaScript. Este projeto é mais um dos desafios propostos no Curso do Discover da Rocketseat. [Link para página do desafio](https://efficient-sloth-d85.notion.site/Desafio-Theme-Switcher-dbabdf77f70d43298df382c8e805fc13). No projeto é permitido alternar entre os temas claro e escuro e a opção do usuário é salva no localStorage do navegador.  
+Este é um alternador de temas feito em HTML, CSS e JavaScript. O projeto é mais um dos desafios propostos no Curso do Discover da Rocketseat. [Link para página do desafio](https://efficient-sloth-d85.notion.site/Desafio-Theme-Switcher-dbabdf77f70d43298df382c8e805fc13). No projeto é permitido alternar entre os temas claro e escuro e a opção do usuário é salva no localStorage do navegador.  
 
 Clique [aqui](https://codepen.io/gustavo_victor/pen/PodmyqM) para conferir como o projeto ficou no Codepen.
 
