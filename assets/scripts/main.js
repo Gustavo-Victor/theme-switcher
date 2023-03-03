@@ -1,0 +1,52 @@
+//elements 
+const inputCheckbox = window.document.querySelector('.switcher-input'); 
+const switchToggler = window.document.querySelector('.switcher-toggler'); 
+const documentBody = document.body; 
+let containsActive = documentBody.classList.contains('active'); 
+
+//events
+inputCheckbox.addEventListener('change', () => {
+    let theme = getTheme(); 
+
+    if(theme == 'dark') {
+        setTheme('light');
+    } else {
+        setTheme('dark');
+    }
+}); 
+
+
+//functions
+function changeBackground () {
+    let theme = getTheme(); 
+
+    if(theme == 'dark') {
+        documentBody.classList.add('active'); 
+    } else {
+        documentBody.classList.remove('active');
+    }
+}
+
+function checkTheme() {
+    let theme = getTheme(); 
+    if(theme == null || theme == undefined || typeof(theme) != 'string') {
+        setTheme('light');
+    } else {
+        if(theme == 'dark') {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+    }
+}
+
+function setTheme(theme = 'light') {
+    window.localStorage.setItem('theme', theme); 
+    changeBackground(); 
+}
+
+function getTheme(){
+    return window.localStorage.getItem('theme'); 
+}
+
+checkTheme(); 
