@@ -1,8 +1,6 @@
 //elements 
 const inputCheckbox = window.document.querySelector('.switcher-input'); 
-const switchToggler = window.document.querySelector('.switcher-toggler'); 
-const documentBody = document.body; 
-let containsActive = documentBody.classList.contains('active'); 
+const documentBody = document.body;
 
 //events
 inputCheckbox.addEventListener('change', () => {
